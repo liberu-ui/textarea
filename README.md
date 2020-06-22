@@ -1,7 +1,7 @@
 # Textarea
 
-[![License](https://poser.pugx.org/laravel-enso/textarea/license)](https://packagist.org/packages/laravel-enso/textarea)
-[![Latest Stable Version](https://poser.pugx.org/laravel-enso/textarea/version)](https://packagist.org/packages/laravel-enso/textarea)
+[![License](https://poser.pugx.org/enso-ui/textarea/license)](https://packagist.org/packages/enso-ui/textarea)
+[![Latest Stable Version](https://poser.pugx.org/enso-ui/textarea/version)](https://packagist.org/packages/enso-ui/textarea)
 
 Element Resize Detector
 
