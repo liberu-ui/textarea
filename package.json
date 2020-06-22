@@ -1,6 +1,6 @@
 {
   "name": "@enso-ui/textarea",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple autosize textarea made with Vue",
   "main": "index.js",
   "scripts": {
