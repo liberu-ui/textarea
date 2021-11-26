@@ -11,7 +11,7 @@ export default {
         this.$el.addEventListener('input', this.resizeTextarea);
     },
 
-    beforeDestroy() {
+    beforeUnmount() {
         this.$el.removeEventListener('input', this.resizeTextarea);
     },
 
