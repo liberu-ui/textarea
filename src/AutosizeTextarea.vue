@@ -1,5 +1,5 @@
 <template>
-    <textarea v-bind="$attrs"
+    <textarea
         :value="modelValue"
         @input="$emit('update:modelValue', $event.target.value)"/>
 </template>
