@@ -1,29 +1,40 @@
+<template>
+    <textarea
+        :value="modelValue"
+        @input="$emit('update:modelValue', $event.target.value)"/>
+</template>
+
 <script>
 export default {
     name: 'AutosizeTextarea',
 
-    mounted() {
-        this.$nextTick(() => {
-            this.$el.style.height = `${this.$el.scrollHeight}px`;
-            this.$el.style['overflow-y'] = 'hidden';
-        });
-
-        this.$el.addEventListener('input', this.resizeTextarea);
-    },
-
-    beforeDestroy() {
-        this.$el.removeEventListener('input', this.resizeTextarea);
-    },
-
-    methods: {
-        resizeTextarea(event) {
-            event.target.style.height = 'auto';
-            event.target.style.height = `${event.target.scrollHeight}px`;
+    props: {
+        modelValue: {
+            type: String,
+            required: true,
         },
     },
 
-    render() {
-        return this.$slots.default[0];
+    emits: ['update:modelValue'],
+
+    mounted() {
+        this.resize();
+        this.$el.style['overflow-y'] = 'hidden';
+
+        this.$el.addEventListener('input', this.resize);
+    },
+
+    beforeUnmount() {
+        this.$el.removeEventListener('input', this.resize);
+    },
+
+    methods: {
+        resize(event = null) {
+            const el = event ? event.target : this.$el;
+
+            el.style.height = 'auto';
+            el.style.height = `${el.scrollHeight}px`;
+        },
     },
 };
 </script>
