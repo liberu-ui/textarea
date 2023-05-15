@@ -1,5 +1,5 @@
 {
-  "name": "@cgdsoftware/textarea",
+  "name": "@liberu-ui/textarea",
   "version": "2.0.8",
   "description": "Simple autosize textarea made with Vue",
   "main": "index.js",
