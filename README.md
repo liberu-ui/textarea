@@ -1,7 +1,7 @@
 # Textarea
 
-[![License](https://poser.pugx.org/enso-ui/textarea/license)](https://packagist.org/packages/enso-ui/textarea)
-[![Latest Stable Version](https://poser.pugx.org/enso-ui/textarea/version)](https://packagist.org/packages/enso-ui/textarea)
+[![License](https://poser.pugx.org/liberu-ui/textarea/license)](https://packagist.org/packages/liberu-ui/textarea)
+[![Latest Stable Version](https://poser.pugx.org/liberu-ui/textarea/version)](https://packagist.org/packages/liberu-ui/textarea)
 
 Element Resize Detector
 
