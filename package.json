@@ -1,6 +1,6 @@
 {
   "name": "@liberu-ui/textarea",
-  "version": "2.0.10",
+  "version": "2.0.11",
   "description": "Simple autosize textarea made with Vue",
   "main": "index.js",
   "scripts": {
